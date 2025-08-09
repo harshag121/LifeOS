@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+.cache/
+
+# VSCode
+.vscode/
+
+# Pytest
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Data
+/data/
+*.db
+
+# Build
+build/
+dist/
+
+# Docker
+*.log
+
+# Frontend builds
+frontend/dist/
+frontend/.vite/

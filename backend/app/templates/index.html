@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LifeOS</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>LifeOS</h1>
+        <p>Adaptive UI • Neurosync AI • Smart Task Engine • Knowledge Graph • Scheduler • Insights</p>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Neurosync</h2>
+          <textarea id="query" placeholder="Ask something..."></textarea>
+          <button onclick="sendQuery()">Send</button>
+          <pre id="reply"></pre>
+        </div>
+        <div class="card">
+          <h2>Tasks</h2>
+          <input id="task-title" placeholder="Task title"/>
+          <select id="task-energy">
+            <option>mental</option>
+            <option>physical</option>
+            <option>creative</option>
+          </select>
+          <input id="task-duration" type="number" placeholder="Duration (min)"/>
+          <button onclick="createTask()">Add</button>
+          <button onclick="prioritize()">Prioritize</button>
+          <pre id="tasks"></pre>
+        </div>
+        <div class="card">
+          <h2>Knowledge Graph</h2>
+          <input id="node-label" placeholder="Node label"/>
+          <select id="node-type">
+            <option>concept</option>
+            <option>resource</option>
+            <option>person</option>
+            <option>project</option>
+          </select>
+          <button onclick="addNode()">Add Node</button>
+          <pre id="graph"></pre>
+        </div>
+        <div class="card">
+          <h2>Scheduler</h2>
+          <select id="algo">
+            <option>time_blocking</option>
+            <option>pomodoro</option>
+            <option>flow_state</option>
+          </select>
+          <button onclick="suggest()">Suggest Blocks</button>
+          <pre id="blocks"></pre>
+        </div>
+        <div class="card">
+          <h2>Insights</h2>
+          <button onclick="healthProductivity()">Health x Productivity</button>
+          <button onclick="learningFinance()">Learning Financial Impact</button>
+          <pre id="insights"></pre>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
