@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-slate-950 text-slate-100; }
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg; }
+.btn { @apply bg-brand-600 hover:bg-blue-600 text-white px-3 py-2 rounded-md; }
+.input { @apply w-full bg-slate-950 border border-slate-800 rounded-md px-3 py-2 text-slate-100; }
+.select { @apply w-full bg-slate-950 border border-slate-800 rounded-md px-3 py-2 text-slate-100; }
+.textarea { @apply w-full bg-slate-950 border border-slate-800 rounded-md px-3 py-2 text-slate-100; }
+.pre { @apply bg-slate-950 border border-slate-800 rounded-md p-3 overflow-auto max-h-56; }
+.grid-auto { @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3; }
